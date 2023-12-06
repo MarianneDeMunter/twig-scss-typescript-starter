@@ -1,3 +1,3 @@
 import './header';
 
-console.log('Hoi Marianne 👋');
+console.log('Hello 👋');

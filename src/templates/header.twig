@@ -1,7 +1,83 @@
 <header>
-    <h1>{{ title }}</h1>
-        
-    {% if subtitle is defined and subtitle|length %}
-        <p>{{ subtitle }}</p>
-    {% endif %}
+  <div class="header-overlay"></div>
+  <nav class="navbar navbar-expand-lg navbar-light mx-auto flex-column">
+    <div class="container-fluid">
+      <a class="navbar-brand d-flex" href="#">
+        <div class="logo p-2 bg-white">
+          <img
+            src="/images/logo-stomahulp.svg"
+            alt="stomahulp"
+            width="167"
+            height="30"
+          />
+        </div>
+        <div class="logo-slide p-2">
+          <img
+            src="/images/logo-helpt.svg"
+            alt="helpt"
+            width="108"
+            height="30"
+          />
+        </div>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav align-items-baseline ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link d-flex align-items-baseline gap-2"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Over Stomahulp
+              <img
+                src="/images/arrow.svg"
+                width="14px"
+                height="14px"
+                alt="stomahulp club"
+              />
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Contact</a></li>
+              <li><a class="dropdown-item" href="#">Ons verhaal</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ervaringsverhalen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Voor zorgprofessionals</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-baseline gap-1" href="#">
+              <img
+                src="/images/external.svg"
+                width="15px"
+                height="15px"
+                alt="stomahulp club"
+              />
+              Stomahulp Club</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+  </nav>
 </header>
